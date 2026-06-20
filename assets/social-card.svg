@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0F0F1A"/>
+  <circle cx="390" cy="350" r="360" fill="#8B7DA8" opacity=".20"/>
+  <circle cx="950" cy="200" r="260" fill="#6ee7b7" opacity=".08"/>
+  <text x="70" y="92" fill="#8a8a9a" font-family="ui-monospace, Consolas, monospace" font-size="20" letter-spacing="4">H3CZ.DEV / CYBERSECURITY PORTFOLIO</text>
+  <text x="70" y="300" fill="#ffffff" font-family="Georgia, serif" font-size="128" font-style="italic" font-weight="700">JR Lopez</text>
+  <rect x="70" y="340" width="220" height="6" fill="#8B7DA8"/>
+  <text x="70" y="420" fill="#a68fcc" font-family="Georgia, serif" font-size="42" font-style="italic">AI tools. Web apps. Automation. Security labs.</text>
+  <text x="70" y="555" fill="#8a8a9a" font-family="ui-monospace, Consolas, monospace" font-size="18" letter-spacing="2">PULSE · TAG · CYBERSECURITY LABS · HECZ HQ</text>
+</svg>
