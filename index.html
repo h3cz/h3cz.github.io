@@ -27,9 +27,19 @@
   <body>
     <!-- COSMIC HERO — the hecz.dev signature -->
     <header class="hero">
-      <div class="graffiti-bg" aria-hidden="true"></div>
-      <div class="graffiti-noise" aria-hidden="true"></div>
-      <div class="hero-glow" aria-hidden="true"></div>
+      <img class="hero-still" src="./assets/hero-universe.webp" alt="" aria-hidden="true" />
+      <video
+        class="hero-bg"
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="./assets/hero-universe.webp"
+        aria-hidden="true"
+      >
+        <source src="./assets/nebula-hero.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-scrim" aria-hidden="true"></div>
       <nav class="nav" aria-label="Primary">
         <a href="https://hecz.dev">hecz.dev</a>
         <a href="https://github.com/h3cz">GitHub</a>
@@ -37,7 +47,10 @@
       </nav>
 
       <div class="hero-inner">
-        <img class="graffiti" src="./assets/graffiti-hero.webp" alt="hecz.dev graffiti logo" />
+        <picture class="graffiti">
+          <source srcset="./assets/hecz-graffiti.webp" type="image/webp" />
+          <img src="./assets/hecz-graffiti.png" alt="hecz.dev" width="1500" height="1002" />
+        </picture>
         <p class="hero-tag">Developer. Creator. Problem&nbsp;Solver.</p>
         <p class="hero-sub">Chicago builder &amp; cybersecurity student</p>
         <ul class="creds" aria-label="Training and certifications">
