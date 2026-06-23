@@ -55,10 +55,29 @@ h2, h3, p { margin-top: 0; }
 .hero-bg {
   position: absolute;
   inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* darken + vignette over the video so text stays readable */
+.hero-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
   background:
-    radial-gradient(ellipse at 50% 30%, rgba(15, 15, 26, 0) 0%, rgba(15, 15, 26, 0.55) 70%, var(--cosmic) 100%),
-    url("./assets/hero-universe.webp") center/cover no-repeat;
-  opacity: 0.92;
+    radial-gradient(ellipse at 50% 32%, rgba(15, 15, 26, 0) 0%, rgba(15, 15, 26, 0.5) 68%, var(--cosmic) 100%),
+    linear-gradient(180deg, rgba(15, 15, 26, 0.35), rgba(15, 15, 26, 0.55));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-bg { display: none; }
+  .hero-scrim {
+    background:
+      radial-gradient(ellipse at 50% 30%, rgba(15, 15, 26, 0) 0%, rgba(15, 15, 26, 0.55) 70%, var(--cosmic) 100%),
+      url("./assets/hero-universe.webp") center/cover no-repeat;
+  }
 }
 
 .nav {
@@ -114,12 +133,40 @@ h2, h3, p { margin-top: 0; }
   text-transform: uppercase;
 }
 
+/* credential badges */
+.creds {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 22px 0 0;
+  padding: 0;
+}
+.cred {
+  padding: 5px 12px;
+  border: 1px solid rgba(139, 125, 168, 0.45);
+  border-radius: 999px;
+  background: rgba(139, 125, 168, 0.1);
+  color: #d8d2ec;
+  font-family: "JetBrains Mono", ui-monospace, Consolas, monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.cred-school {
+  border-color: var(--mauve);
+  background: rgba(139, 125, 168, 0.22);
+  color: #fff;
+  font-weight: 500;
+}
+
 .actions {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
   justify-content: center;
-  margin-top: 36px;
+  margin-top: 30px;
 }
 .button {
   display: inline-flex;

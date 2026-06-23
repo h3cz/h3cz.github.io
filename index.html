@@ -27,7 +27,18 @@
   <body>
     <!-- COSMIC HERO — the hecz.dev signature -->
     <header class="hero">
-      <div class="hero-bg" aria-hidden="true"></div>
+      <video
+        class="hero-bg"
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="./assets/hero-universe.webp"
+        aria-hidden="true"
+      >
+        <source src="./assets/nebula-hero.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-scrim" aria-hidden="true"></div>
       <nav class="nav" aria-label="Primary">
         <a href="https://hecz.dev">hecz.dev</a>
         <a href="https://github.com/h3cz">GitHub</a>
@@ -40,6 +51,12 @@
           <span class="serif">Practical tools, secure systems,</span> and human-first tech.
         </p>
         <p class="hero-sub">JR Lopez — Chicago builder &amp; cybersecurity student</p>
+        <ul class="creds" aria-label="Training and certifications">
+          <li class="cred cred-school">Per Scholas</li>
+          <li class="cred">Security+ track</li>
+          <li class="cred">Network+ track</li>
+          <li class="cred">Linux+ track</li>
+        </ul>
         <div class="actions">
           <a class="button primary" href="https://hecz.dev">Visit hecz.dev</a>
           <a class="button ghost" href="https://github.com/h3cz">See the code</a>
