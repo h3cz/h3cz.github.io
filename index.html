@@ -6,7 +6,7 @@
     <title>JR Lopez / h3cz</title>
     <meta
       name="description"
-      content="JR Lopez (h3cz) — Chicago builder and cybersecurity student. Practical tools, secure systems, human-first tech."
+      content="JR Lopez (h3cz) — Chicago builder and cybersecurity student. Practical tools, secure systems, human-first tech. The work behind hecz.dev."
     />
     <meta property="og:title" content="JR Lopez / h3cz" />
     <meta
@@ -25,93 +25,110 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <main>
-      <section class="hero" aria-labelledby="hero-title">
-        <nav class="nav" aria-label="Primary">
-          <a href="https://hecz.dev">hecz.dev</a>
-          <a href="https://github.com/h3cz">GitHub</a>
-          <a href="https://github.com/h3cz/cybersecurity-labs">Labs</a>
-        </nav>
+    <!-- COSMIC HERO — the hecz.dev signature -->
+    <header class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <nav class="nav" aria-label="Primary">
+        <a href="https://hecz.dev">hecz.dev</a>
+        <a href="https://github.com/h3cz">GitHub</a>
+        <a href="https://github.com/h3cz/cybersecurity-labs">Labs</a>
+      </nav>
 
-        <div class="hero-copy">
-          <p class="eyebrow">Chicago · Builder · Cybersecurity</p>
-          <h1 id="hero-title">JR Lopez</h1>
-          <div class="rule" aria-hidden="true"></div>
-          <p class="subtitle">
-            <span class="serif">Practical tools, secure systems,</span>
-            and human-first tech — the work behind hecz.dev.
+      <div class="hero-inner">
+        <img class="graffiti" src="./assets/graffiti-hero.webp" alt="hecz.dev graffiti logo" />
+        <p class="hero-tag">
+          <span class="serif">Practical tools, secure systems,</span> and human-first tech.
+        </p>
+        <p class="hero-sub">JR Lopez — Chicago builder &amp; cybersecurity student</p>
+        <div class="actions">
+          <a class="button primary" href="https://hecz.dev">Visit hecz.dev</a>
+          <a class="button ghost" href="https://github.com/h3cz">See the code</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- CHICAGO / ABOUT — warm cream seam, like the real site -->
+      <section class="about">
+        <figure class="about-photo">
+          <img src="./assets/about-chicago.webp" alt="Hazy Chicago skyline at dawn" loading="lazy" />
+        </figure>
+        <div class="about-copy">
+          <p class="eyebrow">From Chicago</p>
+          <h2 class="serif">I came up through ops and sales. The curiosity was always technical.</h2>
+          <p>
+            Client operations, sales leadership, and support taught me to communicate under
+            pressure, document clearly, and keep work moving when systems are messy.
           </p>
-          <div class="actions">
-            <a class="button primary" href="https://hecz.dev">Visit hecz.dev</a>
-            <a class="button" href="https://github.com/h3cz/pulse">View Pulse</a>
-          </div>
+          <p>
+            The technical side has always been there too — rooting and jailbreaking phones since
+            I was a kid, trying to understand what happens underneath the interface. Now I'm
+            turning that into disciplined security work and tools people actually use.
+          </p>
         </div>
       </section>
 
-      <section class="section intro">
-        <p>
-          I came up through client operations, sales leadership, and support, and that
-          background travels with me: clear communication under pressure, real documentation,
-          and the patience to keep work moving when systems are messy.
-        </p>
-        <p>
-          The technical curiosity has always been there too — rooting and jailbreaking phones
-          since I was a kid, trying to understand what happens underneath the interface. Now
-          I'm turning that into disciplined security work and tools people actually use.
-        </p>
-      </section>
-
-      <section class="section" aria-labelledby="projects-title">
+      <!-- WORK — real project photos -->
+      <section class="work">
         <div class="section-heading">
           <p class="eyebrow">Selected Work</p>
-          <h2 id="projects-title">A few things worth opening.</h2>
+          <h2 class="serif">A few things worth opening.</h2>
         </div>
 
-        <div class="cards">
-          <article class="card">
-            <span class="card-index">01 — Audio</span>
-            <h3>Pulse</h3>
-            <p>
-              Browser focus and sleep audio tuned for open-ear headphones. React, TypeScript,
-              Web Audio, PWA support, media controls, and tested frequency math.
-            </p>
-            <div class="card-links">
-              <a href="https://github.com/h3cz/pulse">Repo</a>
-              <a href="https://h3cz.github.io/pulse/">Demo</a>
+        <div class="work-grid">
+          <article class="work-card">
+            <div class="thumb"><img src="./assets/proj-luluclaw.webp" alt="" loading="lazy" /></div>
+            <div class="work-body">
+              <h3>Tag</h3>
+              <p>Self-hostable multi-model AI chat — BYOK, Supabase Edge Functions, auth, memory, and public security docs.</p>
+              <div class="work-links">
+                <a href="https://github.com/h3cz/tag">Repo</a>
+                <a href="https://hecz.dev/chat">Hosted</a>
+              </div>
             </div>
           </article>
 
-          <article class="card">
-            <span class="card-index">02 — AI</span>
-            <h3>Tag</h3>
-            <p>
-              Self-hostable multi-model AI chat with BYOK architecture, Supabase Edge Functions,
-              auth, memory, and public security docs.
-            </p>
-            <div class="card-links">
-              <a href="https://github.com/h3cz/tag">Repo</a>
-              <a href="https://hecz.dev/chat">Hosted</a>
+          <article class="work-card">
+            <div class="thumb"><img src="./assets/proj-signal.webp" alt="" loading="lazy" /></div>
+            <div class="work-body">
+              <h3>Hecz HQ</h3>
+              <p>Security-minded workspace dashboard: tasks, chat, GitHub activity, integrations, and secrets visibility.</p>
+              <div class="work-links">
+                <a href="https://hecz.dev">Site</a>
+              </div>
             </div>
           </article>
 
-          <article class="card">
-            <span class="card-index">03 — Security</span>
-            <h3>Cybersecurity Labs</h3>
-            <p>
-              School notes, defensive writeups, Linux and networking practice, and safe public
-              documentation habits.
-            </p>
-            <div class="card-links">
-              <a href="https://github.com/h3cz/cybersecurity-labs">Repo</a>
+          <article class="work-card">
+            <div class="thumb"><img src="./assets/proj-toofaded.webp" alt="" loading="lazy" /></div>
+            <div class="work-body">
+              <h3>Pulse</h3>
+              <p>Browser focus &amp; sleep audio tuned for open-ear headphones. React, Web Audio, PWA, tested frequency math.</p>
+              <div class="work-links">
+                <a href="https://github.com/h3cz/pulse">Repo</a>
+                <a href="https://h3cz.github.io/pulse/">Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <div class="thumb starfield"></div>
+            <div class="work-body">
+              <h3>Cybersecurity Labs</h3>
+              <p>School notes, defensive writeups, Linux &amp; networking practice, and safe public documentation habits.</p>
+              <div class="work-links">
+                <a href="https://github.com/h3cz/cybersecurity-labs">Repo</a>
+              </div>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="section split" aria-labelledby="stack-title">
+      <!-- TOOLKIT -->
+      <section class="toolkit">
         <div>
           <p class="eyebrow">Toolkit</p>
-          <h2 id="stack-title">Practical stack.</h2>
+          <h2 class="serif">Practical stack.</h2>
         </div>
         <div class="chips">
           <span>TypeScript</span>
@@ -126,19 +143,10 @@
           <span>Security Labs</span>
         </div>
       </section>
-
-      <section class="section next">
-        <p class="eyebrow">Now</p>
-        <h2>Keeping the work inspectable.</h2>
-        <p>
-          Adding lab writeups, screenshots, case studies, and security notes so every repo is
-          worth reading — not just visible.
-        </p>
-      </section>
     </main>
 
     <footer>
-      hecz.dev · github.com/h3cz · Chicago
+      <span>hecz.dev · github.com/h3cz · Chicago</span>
     </footer>
   </body>
 </html>
